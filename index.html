@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería XYZ</title>
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+.price {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.services {
+    background-color: #ecf0f1;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    color: #2980b9;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+footer {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ferretería XYZ</h1>
+    <p>Tu aliado para todos tus proyectos de hogar y construcción</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<!-- Sección de productos -->
+<div class="main-content">
+    <div class="product-card">
+        <img src="data:image/jpeg;base64,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" alt="Destornillador">
+        <div class="product-info">
+            <h3>Destornillador</h3>
+            <p class="price">$5.99</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="data:image/jpeg;base64,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" alt="Martillo">
+        <div class="product-info">
+            <h3>Martillo</h3>
+            <p class="price">$12.99</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="data:image/jpeg;base64,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J6lO9sMyHvSqVE37+kmeoT4RGpjzCnj8TTJIq4xF7uaVbTYb3WoQxHxeR8dmNSp9eJpNuDd6LUz6TflfTcz1RqKnkCZ/xBhKQsBTUt8C57S6Yz+VeLHw9NUamlRb7MlZB7barbbHkjfrL6j4yp2u+HxKDv5etfzpkzH5f4PcVNVepUYEk+T6XBHRTqQ7d/6TRUvAGGFnWmtNzuTTuhB+UIi4crej4vwLbf7wqntUDUz/AHwJIxPiHDourzA3QBCGLHstpnMZ4OqWOnEVgBc28wuP/rUuPtIeSZM1GvR1EuHci+lEG1M2JCKASCAZOB6JERIpERAREQEREBERAREQEREBERAREQEREBERAREQE4PRUm5AM5xA+KoHAtPsRATqFBdthsdQ9jYi/wCpnbEBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/2Q==" alt="Clavos">
+        <div class="product-info">
+            <h3>Clavos</h3>
+            <p class="price">$3.49</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwhoCvJbxneGndHs41Gequk2j4NOnnX61hQQ&s" alt="Cinta métrica">
+        <div class="product-info">
+            <h3>Cinta métrica</h3>
+       
+            <p class="price">$8.99</p>
+        </div>
+    </div>
+</div>
+
+<!-- Sección de servicios -->
+<div class="services">
+    <h2>Servicios que ofrecemos</h2>
+    <div class="service-cards">
+        <div class="service-card">
+            <h3>Envíos a Domicilio</h3>
+            <p>Envíos rápidos y seguros directamente a tu puerta.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Ferretería XYZ. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
